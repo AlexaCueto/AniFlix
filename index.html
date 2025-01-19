@@ -9,6 +9,8 @@
     <!-- Link for Boxicons -->
     <link rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <!-- Link for Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
 </head>
 <body>
@@ -18,13 +20,41 @@
         <div class="bx bx-menu" id="menu-icon"></div>
 
         <ul class="navbar">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#home">Top Picks</a></li>
-            <li><a href="#home">New&Hot</a></li>
-            <li><a href="#home">Watchlist</a></li>
-            <li><a href="#home">About</a></li>
+            <li><a href="#home" class="home-active">Home</a></li>
+            <li><a href="#featured">Featured</a></li>
+            <li><a href="#new">New</a></li>
         </ul>
+        <div class="search-bar">
+            <box-icon name='search-alt-2' ></box-icon>
+            <i class='bx bx-search-alt-2'></i>
+            <input type="text" placeholder="Enter Anime Name">
+        </div>
      </header>
+     <!-- Home -->
+      <section class="home swiper" id="home">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide container"> 
+                    <img src="assets/attack-on-titan.jpeg" alt=""></div>
+
+                <div class="swiper-slide container"> 
+                    <img src="assets/blue lock.png" alt=""></div>
+
+                <div class="swiper-slide container"> 
+                    <img src="assets/dandadan.jpg" alt=""></div>
+             
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+
+      </section>
+
+      <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Custome JS -->
+     <script src="main.js"></script>
     
 </body>
 </html>
